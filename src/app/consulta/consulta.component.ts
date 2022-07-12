@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./consulta.component.css']
 })
 export class ConsultaComponent implements OnInit {
+  nome: string = 'Ester'
+  idade:number = 28
 
   constructor() { }
 

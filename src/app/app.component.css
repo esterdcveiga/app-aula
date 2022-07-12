@@ -1,0 +1,14 @@
+nav{
+    background-color: aqua;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+nav a{
+    color: deeppink;
+    margin:10px
+}
+
+nav a:hover{
+    color: blueviolet;
+}

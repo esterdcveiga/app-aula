@@ -1,3 +1,13 @@
 <h1>cadastro contato</h1>
-
+<!--exemplo interpolação-->
 <p>{{nome}} tem {{idade}} anos</p>
+
+<!--a diferenção entre o property binding e a interpolação é que o property binding traz informações do ts para uma propriedade html-->
+
+<!--property binding - do ts para o html - usa colchetes-->
+<label>property binding</label>
+<input type="text" [value]="fruta" change="alterar($event)">
+
+<label>{{ fruta }}</label>
+<!--event binding - do html para o ts - captura um evento - o nome evento deve estar entre parênteses-->
+<button (click)="mudar('oi')">event binding</button>

@@ -1,1 +1,6 @@
-<p>consulta works!</p>
+<!--two way data bind-->
+<input type="text" [(ngModel)]="nome" />
+<input type="text" [(ngModel)]="idade">
+<hr>
+
+<p>o nome é: {{ nome }} e a idade: {{ idade }}</p>
