@@ -1,10 +1,12 @@
 <!--two way data bind-->
+<!--ngModel é uma diretiva do Angular para permitir aplicar o two way data binding-->
 <input type="text" [(ngModel)]="nome" />
 <input type="text" [(ngModel)]="idade">
 <hr>
 
 <p>o nome é: {{ nome }} e a idade: {{ idade }}</p>
 
+<!--operador ternário texto do botão vermelho quando o valor de dadosValidados é true e azul quando é false-->
 <button [disabled]=" dadosValidados" [style.color]="dadosValidados ? 'red' : 'blue'">gravar</button>
 
 <button (click)="ativar()">ativar</button>
