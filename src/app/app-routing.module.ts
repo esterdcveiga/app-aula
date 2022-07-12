@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 //importando classes para criação das rotas
 import { CadastroComponent } from "./cadastro/cadastro.component";
 import { ConsultaComponent } from "./consulta/consulta.component";
 import { EdicaoComponent } from "./edicao/edicao.component";
+import { DetalheComponent } from "./detalhe/detalhe.component";
 
 //crinando as rotas para navegação
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'edicao',
     component: EdicaoComponent
+  },
+  {
+    path: 'produto/:idproduto', //induca a rota com um parâmetro
+    component: DetalheComponent
   }
 ];
 

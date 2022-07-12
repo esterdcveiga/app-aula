@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { EdicaoComponent } from './edicao/edicao.component';
+import { DetalheComponent } from './detalhe/detalhe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
     ConsultaComponent,
-    EdicaoComponent
+    EdicaoComponent,
+    DetalheComponent
   ],
   imports: [
     BrowserModule,
