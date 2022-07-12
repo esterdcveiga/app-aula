@@ -1,12 +1,28 @@
 <!--two way data bind-->
 <!--ngModel é uma diretiva do Angular para permitir aplicar o two way data binding-->
-<input type="text" [(ngModel)]="nome" />
+<!--<input type="text" [(ngModel)]="nome" />
 <input type="text" [(ngModel)]="idade">
 <hr>
 
-<p>o nome é: {{ nome }} e a idade: {{ idade }}</p>
+<p>o nome é: {{ nome }} e a idade: {{ idade }}</p>-->
 
 <!--operador ternário texto do botão vermelho quando o valor de dadosValidados é true e azul quando é false-->
-<button [disabled]=" dadosValidados" [style.color]="dadosValidados ? 'red' : 'blue'">gravar</button>
+<!--<button [disabled]=" dadosValidados" [style.color]="dadosValidados ? 'red' : 'blue'">gravar</button>
 
-<button (click)="ativar()">ativar</button>
+<button (click)="ativar()">ativar</button>-->
+
+<!--<p *ngFor="let prod of produtos">{{ prod.id }}, {{ prod.descricao }}, {{ prod.preco }} </p>-->
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>descrição</th>
+        <th>preço</th>
+    </tr>
+    <!--percorrendo o array e colocando seus dados em uma tabela-->
+    <tr *ngFor = "let prod of produtos">
+        <td> {{ prod.id }}
+        <td> {{ prod.descricao }} </td>
+        <td> {{ prod.preco }} </td>
+    </tr>
+</table>

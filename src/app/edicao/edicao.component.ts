@@ -16,6 +16,7 @@ export class EdicaoComponent implements OnInit {
 
   show():void{
     this.blocoVisivel= !this.blocoVisivel
+    
     if (this.blocoVisivel == false) {
       //this.blocoVisivel = true
       this.nomeBotao='hide'
