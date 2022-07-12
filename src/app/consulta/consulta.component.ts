@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-interface IProduro{
-  id:number;
-  descricao:string;
-  preco:number;   
-}
+import { IProduro } from "../interfaces/IProduto";
 
 @Component({
   selector: 'app-consulta',

@@ -1,13 +1,38 @@
-<h1>cadastro contato</h1>
+<!--<h1>cadastro contato</h1>-->
 <!--exemplo interpolação-->
-<p>{{nome}} tem {{idade}} anos</p>
+<!--<p>{{nome}} tem {{idade}} anos</p>-->
 
 <!--a diferenção entre o property binding e a interpolação é que o property binding traz informações do ts para uma propriedade html-->
 
 <!--property binding - do ts para o html - usa colchetes-->
-<label>property binding</label>
+<!--<label>property binding</label>
 <input type="text" [value]="fruta" change="alterar($event)">
 
-<label>{{ fruta }}</label>
+<label>{{ fruta }}</label>-->
 <!--event binding - do html para o ts - captura um evento - o nome evento deve estar entre parênteses-->
-<button (click)="mudar('oi')">event binding</button>
+<!--<button (click)="mudar('oi')">event binding</button>-->
+
+<form #f="ngForm" (ngSubmit)="save(f.value)">
+    <input type="text" ngModel name="nome" placeholder="informe um nome">
+    
+    <input type="number" ngModel name="idade" placeholder="informe a idade">
+
+    <input type="email" ngModel name="email" placeholder="digita teu email">
+
+    <button>Salvar</button>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>nome</th>
+            <th>idade</th>
+            <th>email</th>
+        </tr>
+        <tr *ngFor = "let cont of contatos">
+            <td> {{ cont.nome }} </td>
+            <td> {{ cont.idade }} </td>
+            <td> {{ cont.email }} </td>
+        </tr>
+    </table>
+</form>
