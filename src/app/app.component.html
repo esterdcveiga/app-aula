@@ -1,10 +1,9 @@
-<h1>oin</h1>
+<nav>
+    <a routerLink="/cadastro">cadastro</a>
+    <a routerLink="/consulta">consulta</a>
+    <a routerLink="/edição">edição</a>
+</nav>
 
-<p>{{ title }}</p>
-<p>{{ nome }}</p>
-<p>{{ idade }}</p>
+<!--para que as rotas criadas sejam adicionadas à navegação-->
+<router-outlet></router-outlet>
 
-<p>id: {{contato.id}}</p>
-<p>nome: {{contato.nome}}</p>
-
-<app-cadastro></app-cadastro>
