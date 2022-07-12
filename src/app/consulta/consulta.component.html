@@ -4,3 +4,7 @@
 <hr>
 
 <p>o nome é: {{ nome }} e a idade: {{ idade }}</p>
+
+<button [disabled]=" dadosValidados" [style.color]="dadosValidados ? 'red' : 'blue'">gravar</button>
+
+<button (click)="ativar()">ativar</button>
