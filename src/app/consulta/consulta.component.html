@@ -20,9 +20,10 @@
         <th>preço</th>
         <th>ações</th>
     </tr>
-    <!--percorrendo o array e colocando seus dados em uma tabela-->
+    <!--o ngFor é uma diretiva que permite percorrer um array ou qualquer objeto iterável
+    nesse exemplo percorrendo o array enquanto seus dados são capturados e armazenados em uma tabela-->
     <tr *ngFor = "let prod of produtos">
-        <td> {{ prod.id }}
+        <td> {{ prod.id }} </td>
         <td> {{ prod.descricao }} </td>
         <td> {{ prod.preco }} </td>
         <td><a [routerLink]="['/produto', prod.id]">editar</a></td> <!--passa o caminho da rota e o id referente a ela-->
