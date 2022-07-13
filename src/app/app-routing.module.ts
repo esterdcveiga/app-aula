@@ -21,7 +21,7 @@ const routes: Routes = [
     component: EdicaoComponent
   },
   {
-    path: 'produto/:idproduto', //induca a rota com um parâmetro
+    path: 'produto/:idproduto', //indica que a rota possui um parâmetro
     component: DetalheComponent
   }
 ];

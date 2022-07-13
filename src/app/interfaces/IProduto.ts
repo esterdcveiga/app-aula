@@ -1,5 +1,5 @@
-export interface IProduro{
-    id:number;
-    descricao:string;
-    preco:number;   
-  }
+export interface IProduro {
+    id: number;
+    descricao: string;
+    preco: number;
+}
